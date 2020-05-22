@@ -1,0 +1,44 @@
+.contuctTitle {
+  background: rgb(4, 36, 72);
+  color: white;
+  text-align: center;
+  padding: 15px 5px;
+}
+.chatForm_root {
+  display: none;
+}
+.chatForm_rootOpen form {
+  display: grid;
+  grid-row-gap: 1rem;
+  background: rgb(236, 236, 236);
+  padding: 1rem;
+}
+
+.chatForm_rootOpen input {
+  background: white;
+  border: none;
+  width: 88%;
+  height: 33px;
+  outline: none;
+  margin: 0 auto;
+  padding-left: 12px;
+}
+
+.chatForm_rootOpen button {
+  border: none;
+  background: rgb(4, 36, 72);
+  color: white;
+  height: 33px;
+  outline: none;
+  width: 88%;
+  margin: 0 auto;
+}
+
+.chatForm_rootOpen textarea {
+  width: 88%;
+  margin: 0 auto;
+}
+
+::placeholder {
+  color: grey;
+}
