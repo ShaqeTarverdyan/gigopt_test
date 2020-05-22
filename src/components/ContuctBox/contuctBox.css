@@ -1,0 +1,41 @@
+.contucts_root {
+  position: relative;
+}
+
+.contuctsIconWrapper {
+  position: absolute;
+  width: 50px;
+  height: auto;
+  display: grid;
+  right: 0;
+  top: 90%;
+  border: 1px solid lightgray;
+}
+
+.contuctsIconWrapper div {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 6px 0;
+}
+
+.contuctsIconWrapper div img {
+  width: 70%;
+}
+
+.contuctsIconWrapper div:hover {
+  background: rgb(4, 36, 72) !important;
+}
+.chatForm {
+  display: block;
+  position: absolute;
+  right: 50px;
+  width: 300px;
+  height: 450px;
+  padding: 0;
+  margin: 0;
+}
+
+.contuct_chat:hover .chatForm {
+  right: 100px;
+}
