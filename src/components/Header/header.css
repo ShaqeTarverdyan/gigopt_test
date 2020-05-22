@@ -1,0 +1,50 @@
+.header_root {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  padding: 0 25px;
+}
+
+.header_root section:last-child {
+  display: grid;
+  grid-template-columns: 36% repeat(auto-fill, 27%) 40px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+}
+
+.social img {
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+}
+
+.phoneWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.phone_number {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.phone_number div:first-child {
+  font-weight: 100;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.phone_number div:last-child {
+  color: rgb(21, 156, 210);
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.logo {
+  width: 150px;
+}

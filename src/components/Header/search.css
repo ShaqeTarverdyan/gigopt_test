@@ -1,0 +1,20 @@
+.search_root {
+  border-radius: 20px;
+  padding: 10px;
+  border: 1px solid grey;
+  max-width: 99px;
+  height: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.search_input {
+  border: none;
+  background: none;
+  width: inherit;
+  width: 70px;
+  outline: none;
+}
+
+.search_icon {
+  width: 10px;
+}

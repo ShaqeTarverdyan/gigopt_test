@@ -1,0 +1,9 @@
+.register_root {
+  background: linear-gradient(to right, rgb(0, 169, 237), rgb(0, 69, 135));
+  color: white;
+  border: none;
+  border-radius: 20px;
+  width: 115px;
+  height: 30px;
+  cursor: pointer;
+}
