@@ -1,0 +1,144 @@
+.testimonials {
+  background-image: url("../../staticImages/testimonialsBG.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 500px;
+  padding: 1rem 0;
+  margin-top: 6rem;
+}
+
+.tsSlides {
+  position: relative;
+  width: 550px;
+  margin: 0 auto;
+}
+
+.tsTitle {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.tsImage {
+  border-radius: 50%;
+  border: 1px solid lightgray;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+}
+
+.tsDote {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgb(4, 36, 72);
+  position: absolute;
+  top: 122px;
+  z-index: 2;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.tsDote::before {
+  content: "''";
+  margin-top: 5px;
+}
+
+.tsName {
+  color: rgb(4, 36, 72);
+}
+
+.tsName::before {
+  content: "-";
+  padding-right: 8px;
+}
+
+.tsName::after {
+  content: "-";
+  padding-left: 8px;
+}
+
+.tsText {
+  color: white;
+  line-height: 24px;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.ts_slider_dots button {
+  border: none;
+  background: white;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+}
+
+.ts_slider_dots .carousel__dot--selected {
+  background: rgb(4, 36, 72);
+  width: 12px;
+  height: 12px;
+}
+
+.ts_slider_dots {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.tsButtonGroup {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 20%;
+}
+
+.tsButtonGroup button {
+  border: none;
+  outline: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  display: initial;
+}
+
+.tsButtonGroup button:hover {
+  background: rgb(4, 36, 72);
+  color: white;
+}
+
+.prev::before {
+  font-family: "gigopticons";
+  content: "\61";
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.next::before {
+  font-family: "gigopticons";
+  content: "\62";
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.tsButtonGroup button:disabled .next::before .prev::before {
+  color: grey;
+  font-weight: normal;
+}
