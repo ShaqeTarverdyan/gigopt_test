@@ -1,24 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+
+import Header from "./components/Header";
+import TopSlider from "./components/Top_Slider";
+import MenuTree from "./components/MenuBar";
+import AboutUs from "./components/Features";
+import Testimonials from "./components/Testimonials";
+import GallerySlider from "./components/Gallery_Slider";
+import Footer from "./components/Footer";
+import ContuctBox from "./components/ContuctBox";
+
+import {
+  testimonialsData,
+  aboutUsData,
+  gallerySliderStaticData,
+  menuStaticData,
+  topSliderStaticData,
+  infoList,
+  contuctUsData,
+} from "./staticData";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="root">
+      <Header />
+      <TopSlider images={topSliderStaticData} />
+      <MenuTree data={menuStaticData} position={0} />
+      <ContuctBox />
+      <AboutUs data={aboutUsData} />
+      <Testimonials testimonials={testimonialsData} />
+      <GallerySlider images={gallerySliderStaticData} />
+      <Footer infoList={infoList} contuctUsData={contuctUsData} />
     </div>
   );
 }
