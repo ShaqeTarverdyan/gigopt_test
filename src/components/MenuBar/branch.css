@@ -1,0 +1,7 @@
+.branch_open {
+  display: block;
+}
+
+.branch_close {
+  display: none;
+}

@@ -1,0 +1,31 @@
+.menuTree_0 {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 16.66%);
+  text-align: center;
+  list-style-type: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.menuTree_0 li {
+  padding: 22% 0;
+}
+
+.menuTree_1 {
+  position: absolute;
+  bottom: 106px;
+  list-style-type: none;
+  padding: 0;
+  width: 16.66%;
+}
+
+.menuTree_1 li {
+  padding: 10px 0;
+  color: white;
+}
+
+.menuTree_1 li:hover {
+  background: rgb(0, 169, 237) !important;
+}
